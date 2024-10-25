@@ -1,1 +1,1 @@
-Epicode Blog Template
+README Epicode Blog Template

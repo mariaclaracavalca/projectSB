@@ -1,3 +1,9 @@
 body {
   font-family: "Ubuntu", sans-serif;
 }
+.btn, .btn:hover, .btn:focus {
+  border: none;
+  background-color:  rgb(32, 148, 82);
+  color: #333;
+  border: 1px solid transparent;
+}

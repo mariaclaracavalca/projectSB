@@ -1,13 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import BlogList from "../../components/blog/blog-list/BlogList";
-import "./styles.css";
+import "./home.css";
+import BlogPosts from "../../components/blog/blog-posts/BlogPosts";
 
-const Home = props => {
+const Home = () => {
   return (
-    <Container fluid="sm">
-      <h1 className="blog-main-title mb-3">Benvenuto sullo Strive Blog!</h1>
-      <BlogList />
+    <Container>
+      <h1 className="blog-main-title pb-0 mb-0">Benvenuto sullo Strive Blog!</h1>
+      <BlogPosts></BlogPosts>
     </Container>
   );
 };
