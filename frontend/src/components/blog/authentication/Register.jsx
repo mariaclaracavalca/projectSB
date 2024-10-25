@@ -54,13 +54,13 @@ const Register = () => {
       
       {showSuccessAlert && (
         <Alert variant="success">
-          Registration successful! You will be redirected to the login.
+          Registrazione riuscita! Verrete reindirizzati al login.
         </Alert>
       )}
 
       <Form onSubmit={handleRegisterSubmit}>
         <Form.Group controlId="formBasicName">
-          <Form.Label>Name</Form.Label>
+          <Form.Label>Nome</Form.Label>
           <Form.Control
             type="text"
             name="name"
@@ -72,7 +72,7 @@ const Register = () => {
         </Form.Group>
 
         <Form.Group controlId="formBasicSurname">
-          <Form.Label>Surname</Form.Label>
+          <Form.Label>Cognome</Form.Label>
           <Form.Control
             type="text"
             name="surname"
@@ -84,7 +84,7 @@ const Register = () => {
         </Form.Group>
 
         <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Indirizzo e-mail</Form.Label>
           <Form.Control
             type="email"
             name="email"
@@ -108,7 +108,7 @@ const Register = () => {
         </Form.Group>
 
         <Form.Group controlId="formBasicBirthDate">
-          <Form.Label>Birth Date</Form.Label>
+          <Form.Label>Data di nascita</Form.Label>
           <Form.Control
             type="date"
             name="birthDate"
@@ -119,7 +119,7 @@ const Register = () => {
         </Form.Group>
 
         <Button variant="primary" type="submit" className='mt-3'>
-          Register
+        Registro
         </Button>
       </Form>
     </Container>
