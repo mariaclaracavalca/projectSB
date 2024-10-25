@@ -53,14 +53,14 @@ const Login = () => {
 
   return (
     <Container fluid="sm">
-      <h1>Login if you want to see the content!</h1>
+      <h1>Effettua il login se vuoi vedere il contenuto!</h1>
       <Row>
         <Col lg={6}>
           <h2 className='mt-5'>Login</h2>
 
           {showSuccessAlert && (
             <Alert variant="success">
-              Login successful! You will be redirected to the Homepage.
+              Accesso riuscito! Verrete reindirizzati alla pagina iniziale.
             </Alert>
           )}
 
@@ -72,7 +72,7 @@ const Login = () => {
 
           <Form onSubmit={handleLoginSubmit}>
             <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>Indirizzo e-mail</Form.Label>
               <Form.Control
                 type="email"
                 name="email"
@@ -101,15 +101,15 @@ const Login = () => {
           </Form>
         </Col>
         <Col lg={6}>
-          <h2 className='mt-5'>...or Login with Google</h2>
+          <h2 className='mt-5'>...o Accedi con Google</h2>
           <Button variant="primary" className='mt-3' onClick={() => window.location.href = `${process.env.REACT_APP_API_URL}/auth/login-google`}>
           <i className="bi bi-google"></i> oogle Login
           </Button>
 
-          <h2 className='mt-5'>Not registered yet?</h2>
+          <h2 className='mt-5'>Non ancora registrato?</h2>
           <Link to={'/register'}>
           <Button variant="primary" className='mt-3'>
-            Click here
+          Clicca qui
           </Button>
           </Link>
         </Col>
